@@ -1,0 +1,20 @@
+HURAGAN CDR TEAM	2018-01-01	Romet	karbonowa	DT Swiss PR 1600	Shimano Ultegra	1
+HURAGAN 3	2018-01-01	Romet	aluminiowa	Alexrims CX35 35 mm	Shimano Sora	2
+HURAGAN 2	2018-01-01	Romet	aluminiowa	Alexrims AT 470	Shimano Sora	3
+HURAGAN 4	2018-01-01	Romet	aluminiowa	Alexrims CX35 35 mm	Shimano Tiagra	4
+HURAGAN 2+	2018-01-01	Romet	aluminiowa	Alexrims CX35 35 mm	Shimano Claris	5
+HURAGAN CDR	2017-01-01	Romet	karbonowa	DT Swiss R23	Shimano Ultegra	6
+HURAGAN 3	2017-01-01	Romet	aluminiowa	Alexrims AT 470	Shimano Tiagra	7
+HURAGAN 2	2017-01-01	Romet	aluminiowa	Alexrims AT 470	Shimano Sora	8
+HURAGAN 4	2017-01-01	Romet	aluminiowa	Alexrims AT 470	Shimano 105	9
+BOREAS	2017-01-01	Romet	aluminiowa	Alexrims At 490	Shimano Tiagra	10
+Dolce	2016-01-01	Specialized	aluminiowa	Axis Sport	Shimano Claris	11
+Langster	2016-01-01	Specialized	aluminiowa	Axis Sport Track	BCD spider	12
+Sequoia	2015-01-01	Specialized	aluminiowa	Specialized 700C	Shimano Alivio/Sora	13
+ALLEZ ELITE	2017-01-01	Specialized	aluminiowa	DT R460	Shimano 105	14
+S-WORKS CRUX	2018-01-01	Specialized	karbonowa	Roval CLX 50 Disc	Shimano Dura-Ace	15
+Roubaix Expert Ultegra Di2	2014-01-01	Specialized	karbonowa	Roval SLX 24 Disc	Shimano Ultegra	16
+ATX 27.5 2	2015-01-01	Giant	aluminiowa	GIANT CR70 27.5	Shimano Tourney	17
+REVEL	2015-01-01	Giant	aluminiowa	GIANT CG17	Shimano Tourney	18
+ANTHEM 2	2018-01-01	Giant	aluminiowa	GIANT XC-1	Shimano SLX	19
+TCX ADVANCED SX	2018-01-01	Giant	karbonowa	GIANT P-X2	SRAM S350	20

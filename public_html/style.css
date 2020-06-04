@@ -1,0 +1,136 @@
+body {
+	background: url("green_gobbler.png") fixed center;
+	/*
+	=========================================================================
+	 This pattern is downloaded from www.toptal.com/designers/subtlepatterns/ 
+	 If you need more, that's where to get'em.
+	 ========================================================================
+	 */
+	 text-align: center;
+}
+
+table {
+	background: url("light-grey-terrazzo.png") fixed center;
+		/*
+	=========================================================================
+	 This pattern is downloaded from www.toptal.com/designers/subtlepatterns/ 
+	 If you need more, that's where to get'em.
+	 ========================================================================
+	 */
+	 margin-left: auto;
+	 margin-right: auto;
+	 white-space: nowrap;
+}
+
+img {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	width: 400px;
+	height: 225px;
+}
+
+form.edycja > input {
+	margin-bottom: 8px;
+	padding: 10px;
+}
+
+a.link_maly {
+	color: #000000;
+	text-decoration: none;
+	display: block;
+	width: 186px;
+	height: 115px;
+	font: Verdana;
+	padding-top: 30px;
+	font-size: 19px;
+	font-weight: bold;
+}
+
+a.link_duzy {
+	color: #000000;
+	text-decoration: none;
+	display: block;
+	width: 386px;
+	height: 115px;
+	font: Verdana;
+	padding-top: 30px;
+	font-size: 19px;
+	font-weight: bold;
+}
+
+.guzik {
+	margin-bottom: 25px;
+	margin-top: 14px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width: 400px;
+	height: 387px;
+}
+
+.guzik1 {
+	width: 186px;
+	height: 115px;
+	margin: 7px;
+	background-color: #accc95;
+	float: left;
+	text-align: center;
+}
+
+.guzik2 {
+	float: left;
+	width: 186px;
+	height: 115px;
+	margin: 7px;
+	background-color: #9abfaf;
+	text-align: center;
+}
+
+.guzik3 {
+	clear: both;
+	float: left;
+	width: 186px;
+	height: 115px;
+	margin: 7px;
+	background-color: #9acc7b;
+	text-align: center;
+}
+
+.guzik4 {
+	float: left;
+	width: 186px;
+	height: 115px;
+	margin: 7px;
+	background-color: #accc6e;
+	text-align: center;
+}
+
+.guzik5 {
+	clear: both;
+	width: 386px;
+	height: 115px;
+	margin: 7px;
+	background-color: #9ac57b;
+	text-align: center;
+}
+
+.guzik1:hover {
+	background-color: #8aaa73;
+}
+
+.guzik2:hover {
+	background-color: #789d8d;
+}	
+
+.guzik3:hover {
+	background-color: #78aa59;
+}	
+
+.guzik4:hover {
+	background-color: #8aaa4c;
+}	
+
+.guzik5:hover {
+	background-color: #78a359;
+}

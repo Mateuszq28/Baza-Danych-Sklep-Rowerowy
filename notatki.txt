@@ -1,0 +1,46 @@
+1. Zmiana hasła do bazy
+ALTER USER s171577 WITH ENCRYPTED PASSWORD '123';
+
+2. Po zimportowaniu danych zaktualizować serial id
+ALTER SEQUENCE nazwa_tabeli_id_seq RESTART WITH <wpisz_nowy_numer_id>;
+hasło do bazy: 123
+
+3. CREATE VIEW  wykaz_rowerow AS SELECT
+model.nazwa, rower.kolor, rower.id_roweru
+FROM rower
+LEFT JOIN model ON rower.model = model.nr_seryjny;
+
+4. CREATE VIEW  raport_sprzedazy AS SELECT
+k.imie || ' ' || k.nazwisko AS osoba, m.nazwa, r.kolor, s.cena, s.data, s.nr_transakcji
+FROM sprzedaz s
+LEFT JOIN klient k ON s.nabywca = k.id_klienta
+LEFT JOIN rower r ON s.produkt = r.id_roweru
+LEFT JOIN model m ON r.model = m.nr_seryjny;
+
+5. CREATE VIEW rowery_stan AS SELECT model.nazwa, rower.kolor, rower.id_roweru
+FROM rower
+LEFT JOIN model ON rower.model = model.nr_seryjny
+LEFT JOIN sprzedaz ON rower.id_roweru = sprzedaz.produkt
+WHERE sprzedaz.nr_transakcji Is NULL;
+
+6. CREATE VIEW ranking_klientow AS SELECT
+k.id_klienta, k.imie || ' ' || k.nazwisko AS osoba, count(s.nabywca) AS kupione_rowery
+FROM sprzedaz s, klient k
+WHERE s.nabywca = k.id_klienta
+GROUP BY k.id_klienta, osoba;
+
+7. CREATE VIEW wybor_klienta AS SELECT
+'id: ' || id_klienta || ' ' || imie || ' ' || nazwisko AS osoba
+FROM klient;
+
+Funkcje:
+
+1. CREATE FUNCTION najlepszy_klient() RETURNS varchar(61)
+LANGUAGE 'plpgsql'
+AS '
+	DECLARE zmi int;
+	BEGIN
+	select max(kupione_rowery) FROM ranking_klientow into zmi;
+	RETURN osoba FROM ranking_klientow WHERE kupione_rowery = zmi;
+	END;
+' ;
